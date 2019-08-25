@@ -33,8 +33,4 @@ router.post('/messages', async ctx => {
 
 })
 
-router.post('/response', ctx => {
-
-})
-
 module.exports = router
