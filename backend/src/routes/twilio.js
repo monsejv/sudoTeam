@@ -1,19 +1,14 @@
 const Router = require('koa-router')
 
 const twilio = require('../usecase/twilio')
+const watson = require('../usecase/watson')
 
 const router = new Router({
   prefix: '/twilio'
 })
 
 router.post('/messages', async ctx => {
-  // const conversatoinId = '23165584689'
-  // const userId = '5d4b2059ebc135a8bbe67bab'
-
-
-
   const userWANumber = await ctx.request.body.From
-  console.log(userWANumber)
 
   let atachment = ''
   if (ctx.request.body.NumMedia > 0) {
@@ -23,22 +18,18 @@ router.post('/messages', async ctx => {
   // const ctxBody = await ctx.request.body
   // console.log('----------------\nCtx Body:\n', ctxBody)
 
-  // const message = await ctx.request.body.Body
+  const message = await ctx.request.body.Body
   // console.log('----------------\nTwilio message:', message)
 
   // Enviar a watson y guardar en variable la respuesta
-  // const response = await sendToWatson(message)
+  const watsonResponse = await watson.chat(message)
 
   // Enviar Respuesta a whatsapp
-  twilio.sendAnswer('Esta es una respuesta', userWANumber)
+  twilio.sendAnswer(watsonResponse, userWANumber)
 
   ctx.response.body = {
     message: 'menssaje send to watson succesufully'
   }
-
-})
-
-router.post('/response', ctx => {
 
 })
 
