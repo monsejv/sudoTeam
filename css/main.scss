@@ -1,15 +1,9 @@
-
 //fuente
 
 @font-face {font-family: Avenir; src: url("../fonts/AvenirNextLTPro-Regular.otf")}
 
 //Estilos home
 
-body{
-    background: #f6f6f6;
-    min-height: 800px;
-    overflow-y: scroll;
-}
 .header{
     background: linear-gradient(139.86deg, #087A58 14.54%, rgba(8, 122, 88, 0) 67.54%), #008750;
     box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25);
@@ -177,7 +171,8 @@ body{
         height: 24px;
         float: left;
         margin-left: 32px;
-        margin-top: 11px;
+        margin-top: 17px;
+
     }
     .icon-money{
         background-image: url(../img/money.svg);
@@ -248,4 +243,71 @@ body{
         background: #17a54d!important;
         color: white!important;
     }
+ }
+
+
+//Estilos home
+
+body{
+    background: #f6f6f6;
+    min-height: 800px;
+    overflow-y: scroll;
+    &.no-scroll{
+        overflow-y: hidden;
+    }
+}
+
+// Estilos login
+
+.image-index{
+    width: 100%;
+}
+.header-login{
+     .card{
+        background: no-repeat;
+        margin: auto;
+        width: 360px;
+        height: 355px;
+    }
+}
+.container{ 
+    padding: 12px 40px;
+    .card-body{    
+        form{
+            font-family: 'Avenir';
+            h2{
+                color: #17A54D;
+                margin-bottom: 25px;
+            }
+            input{
+                background: #E1E2E7;
+                margin-bottom: 25px;
+            }
+        }
+        .btn-success{
+            font-family: 'Avenir';
+            font-size: 16px;
+            background-color:  #17A54D;
+            margin-bottom: 15px;
+        }
+        p{
+            font-family: 'Avenir';
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #4A4A4A;
+        }
+    }
+}
+
+.image {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 80%;
+    top: 88%;
+    background: #17A54D;    
+    position: absolute;
+    background: #FFFFFF;
 }
