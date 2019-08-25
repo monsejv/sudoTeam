@@ -43,5 +43,60 @@
     }
 }
 
-
+// Estilos login
+.header-login{
+     .card{
+        background: no-repeat;
+        margin: auto;
+        width: 360px;
+        height: 355px;}
+}
+.container{ 
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px;
+    .card-body{    
+        form{
+            font-family: 'Avenir';
+            h2{
+                color: #17A54D;
+                margin-bottom: 25px;
+            }
+            input{
+                background: #E1E2E7;
+                margin-bottom: 25px;
+            }
+        }
+        .btn-success{
+            font-family: 'Avenir';
+            font-size: 16px;
+            background-color:  #17A54D;
+            margin-bottom: 15px;
+        }
+        p{
+            font-family: 'Avenir';
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #4A4A4A;
+        }
+    }
+}
+.image {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 80%;
+    top: 88%;
+    
+    background: #17A54D;
+    
+    
+    /* WhatsApp */
+    
+    
+    position: absolute;
+    background: #FFFFFF;
+}
 

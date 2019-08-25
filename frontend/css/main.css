@@ -1,7 +1,6 @@
 @font-face {
   font-family: Avenir;
-  src: url("../fonts/AvenirNextLTPro-Regular.otf");
-}
+  src: url("../fonts/AvenirNextLTPro-Regular.otf"); }
 .header {
   background: linear-gradient(139.86deg, #087A58 14.54%, rgba(8, 122, 88, 0) 67.54%), #008750;
   box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25);
@@ -10,34 +9,71 @@
   color: #fff;
   border-bottom-left-radius: 44%;
   border-bottom-right-radius: 23px;
-  font-family: "Avenir";
-}
-.header .user {
-  width: 70%;
-  font-size: 30px;
-  padding: 20px 40px 0px;
-}
-.header .welcome {
-  width: 50%;
-  text-align: left;
-  font-size: 13px;
-  padding: 20px 40px;
-}
-.header .points {
-  background: white;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  font-family: 'Avenir'; }
+  .header .user {
+    width: 70%;
+    font-size: 30px;
+    padding: 20px 40px 0px; }
+  .header .welcome {
+    width: 50%;
+    text-align: left;
+    font-size: 13px;
+    padding: 20px 40px; }
+  .header .points {
+    background: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 30px; }
+    .header .points span {
+      color: #4A4A4A;
+      font-size: 10px;
+      top: 28px;
+      padding: 0px 16px;
+      position: absolute; }
+
+.header-login .card {
+  background: no-repeat;
+  margin: auto;
+  width: 360px;
+  height: 355px; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 40px; }
+  .container .card-body form {
+    font-family: 'Avenir'; }
+    .container .card-body form h2 {
+      color: #17A54D;
+      margin-bottom: 25px; }
+    .container .card-body form input {
+      background: #E1E2E7;
+      margin-bottom: 25px; }
+  .container .card-body .btn-success {
+    font-family: 'Avenir';
+    font-size: 16px;
+    background-color: #17A54D;
+    margin-bottom: 15px; }
+  .container .card-body p {
+    font-family: 'Avenir';
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #4A4A4A; }
+
+.image {
   position: absolute;
-  right: 30px;
-  top: 30px;
-}
-.header .points span {
-  color: #4A4A4A;
-  font-size: 10px;
-  top: 28px;
-  padding: 0px 16px;
+  width: 15px;
+  height: 15px;
+  left: 80%;
+  top: 88%;
+  background: #17A54D;
+  /* WhatsApp */
   position: absolute;
-}
+  background: #FFFFFF; }
 
 /*# sourceMappingURL=main.css.map */
