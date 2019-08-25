@@ -7,11 +7,6 @@ const router = new Router({
 })
 
 router.post('/messages', async ctx => {
-  // const conversatoinId = '23165584689'
-  // const userId = '5d4b2059ebc135a8bbe67bab'
-
-
-
   const userWANumber = await ctx.request.body.From
   console.log(userWANumber)
 
