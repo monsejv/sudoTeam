@@ -12,39 +12,90 @@
 </head>
 
 <body>
+    <!--HTML modales-->
+    <div class="modal fade" id="inf-prestamo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="bobles">
+                        <div class="boble boble-academic active" data-toggle="modal" data-target="#inf-prestamo">
+                            <div class="fill"></div>
+                            <div class="circle">
+                                <span class="icon-academic"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="title">Academico</p>
+                    <p class="payments">22 de 70 pagos</p>
+                    <p class="description text-center"> Yo te ayudare a aprender más de tus finanzas personales y
+                        alcanzar tus logros
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="inf-zumi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="title">Hola soy tu asesor personal Zumi..</p>
+                    <br>
+                    <p class="description">Yo te ayudare a aprender más de tus finanzas personales y alcanzar tus logros
+                        <br><br>
+                        - Averigua si puedes solicitar un credito de auto<br>
+                        - Tu defines los plazos y los montos
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Iniciar asesoria</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--HTML Vistas mobile-->
     <div class="header">
         <p class="user">Hola Jorge!</p>
         <p class="welcome">Bienvenido a la nueva aplicación de Banco Azteca</p>
         <div class="points"><span>230 pts.</span></div>
     </div>
     <div class="container-fluid">
-        <p>Tus logros</p>
+        <p class="logros">Tus logros</p>
         <div class="bobles">
-            <div class="boble-academic">
+            <div class="boble boble-academic active" data-toggle="modal" data-target="#inf-prestamo">
+                <div class="fill"></div>
                 <div class="circle">
                     <span class="icon-academic"></span>
                 </div>
                 <span>Academico</span>
             </div>
-            <div class="boble-home">
+            <div class="boble boble-home" data-toggle="modal" data-target="#inf-zumi">
                 <div class="circle">
                     <span class="icon-home"></span>
                 </div>
                 <span>Hogar</span>
             </div>
-            <div class="boble-cars">
+            <div class="boble boble-cars" data-toggle="modal" data-target="#inf-zumi">
                 <div class="circle">
                     <span class="icon-cars"></span>
                 </div>
                 <span>Vehiculos</span>
             </div>
-            <div class="boble-insurance">
+            <div class="boble boble-insurance" data-toggle="modal" data-target="#inf-zumi">
                 <div class="circle">
                     <span class="icon-insurance"></span>
                 </div>
                 <span>Seguros</span>
             </div>
-            <div class="boble-saves">
+            <div class="boble boble-saves" data-toggle="modal" data-target="#inf-zumi">
                 <div class="circle">
                     <span class="icon-saves"></span>
                 </div>
@@ -56,10 +107,10 @@
         <div class="button-home">
             <span class="icon-home">Inicio</span>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 division">
             <span class="icon-settings"></span>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 division">
             <span class="icon-money"></span>
         </div>
     </div>
