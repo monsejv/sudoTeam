@@ -1,8 +1,6 @@
-// require('dotenv').config()
 const twilioClient = require('../lib/twilio')
 
 const twilioWANumber = process.env.TWILIO_PROVITIONAL_WHATSAPP_NUMBER
-console.log('twilioWANumber: ', twilioWANumber)
 
 const sendAnswer = async (answer, clientWANumber) => {
   try {
