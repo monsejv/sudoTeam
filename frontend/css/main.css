@@ -40,4 +40,26 @@
   position: absolute;
 }
 
+.bobles {
+  position: relative;
+  height: 100%;
+}
+.bobles .boble-academic {
+  width: 130px;
+  height: 130px;
+  background: #C5C5C5;
+  border-radius: 50%;
+}
+.bobles .boble-academic .circle {
+  width: 100px;
+  height: 100px;
+  background: #FB6060;
+  border-radius: 50%;
+  margin: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0px 0px 0px 5px #fff;
+}
+
 /*# sourceMappingURL=main.css.map */
