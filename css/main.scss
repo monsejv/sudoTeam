@@ -1,2 +1,47 @@
 
+//fuente
+
+@font-face {font-family: Avenir; src: url("../fonts/AvenirNextLTPro-Regular.otf")}
+
+//Estilos home
+
+.header{
+    background: linear-gradient(139.86deg, #087A58 14.54%, rgba(8, 122, 88, 0) 67.54%), #008750;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25);
+    height: 230px;
+    width: 100%;
+    color: #fff;
+    border-bottom-left-radius: 44%;
+    border-bottom-right-radius: 23px;
+    font-family: 'Avenir';
+    .user{
+        width: 70%;
+        font-size: 30px;
+        padding: 20px 40px 0px;
+    }
+    .welcome{
+        width: 50%;
+        text-align: left;
+        font-size: 13px;
+        padding: 20px 40px;
+    }
+    .points{
+        background: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        span{
+            color: #4A4A4A;
+            font-size: 10px;
+            top: 28px;
+            padding: 0px 16px;
+            position: absolute;
+        }
+    }
+}
+
+
 
