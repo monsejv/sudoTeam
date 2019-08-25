@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Koa = require('koa')
 const twilioRouter = require('./src/routes/twilio')
 const koaBody = require('koa-body')
