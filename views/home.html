@@ -53,7 +53,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://wa.me/+14155238886" class="btn btn-success" data-dismiss="modal">Iniciar asesoria</a>
+                    <a href="https://wa.me/+14155238886" class="btn btn-success btn-wa" data-dismiss="modal">Iniciar asesoria</a>
                 </div>
             </div>
         </div>
@@ -118,5 +118,12 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
+
+<script>
+    $('.ls-modal').on('click', function (event) {
+        event.preventDefault()
+        $('#inf-zumi').modal('show').find('.modal-footer').load($(this).attr('hred'))
+    })
+</script>
 
 </html>
