@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/AvenirNextLTPro-Regular.otf");
+}
+body {
+  background: #f6f6f6;
+  min-height: 800px;
+  overflow-y: scroll;
+}
+
+.header {
+  background: linear-gradient(139.86deg, #087A58 14.54%, rgba(8, 122, 88, 0) 67.54%), #008750;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.25);
+  height: 230px;
+  width: 100%;
+  color: #fff;
+  border-bottom-left-radius: 44%;
+  border-bottom-right-radius: 23px;
+  font-family: "Avenir";
+}
+.header .user {
+  width: 70%;
+  font-size: 30px;
+  padding: 20px 40px 0px;
+}
+.header .welcome {
+  width: 60%;
+  text-align: left;
+  font-size: 13px;
+  padding: 20px 40px;
+}
+.header .points {
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.header .points span {
+  color: #4A4A4A;
+  font-size: 10px;
+  top: 28px;
+  padding: 0px 16px;
+  position: absolute;
+}
+
+.logros {
+  color: #2e3032;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.bobles {
+  position: relative;
+  height: 100%;
+}
+.bobles .boble {
+  width: 100px;
+  height: 100px;
+  background: #e1e2e7;
+  border-radius: 50%;
+  position: absolute;
+}
+.bobles .boble.active {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(-115.14deg, #17a54d 31.54%, rgba(8, 122, 88, 0) 16.54%), #c5c5c5;
+}
+.bobles .boble.active .circle {
+  width: 100px;
+  height: 100px;
+  background: #FB6060;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+}
+.bobles .boble .circle {
+  width: 78px;
+  height: 78px;
+  background: #e1e2e7;
+  border-radius: 50%;
+  margin: 5px;
+  position: absolute;
+  box-shadow: 0px 0px 0px 5px #fff;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  top: 6px;
+  left: 6px;
+}
+.bobles .boble span {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+}
+.bobles .boble-academic {
+  top: 10px;
+  left: 20px;
+}
+.bobles .boble-academic .circle {
+  background-image: url("../img/academic-icon.svg") !important;
+}
+.bobles .boble-home {
+  right: 30px;
+  top: 20px;
+}
+.bobles .boble-home .circle {
+  background-image: url("../img/home-icon.svg") !important;
+}
+.bobles .boble-cars {
+  top: 160px;
+  left: 40%;
+}
+.bobles .boble-cars .circle {
+  background-image: url("../img/cars-icon.svg") !important;
+}
+.bobles .boble-insurance {
+  top: 276px;
+  left: 30px;
+}
+.bobles .boble-insurance .circle {
+  background-image: url("../img/insurance-icon.svg") !important;
+}
+.bobles .boble-saves {
+  top: 290px;
+  right: 10px;
+}
+.bobles .boble-saves .circle {
+  background-image: url("../img/save-icon.svg") !important;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 56px;
+  background: #fff;
+  border-top: 1px solid #c6c6c6;
+}
+.footer span {
+  display: block;
+}
+.footer .button-home {
+  position: absolute;
+  left: 40%;
+  bottom: 0px;
+  background: #17a54d;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18px -3px;
+}
+.footer .button-home span {
+  background-image: url(../img/home-page.svg);
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  background-size: 27px;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  padding: 41px 24px;
+}
+.footer .division {
+  height: 100%;
+}
+.footer .division:first-of-type {
+  border-left: 1px solid #c6c6c6;
+}
+.footer .icon-settings {
+  background-image: url(../img/settings.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-left: 32px;
+  margin-top: 11px;
+}
+.footer .icon-money {
+  background-image: url(../img/money.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-right: 45px;
+  margin-top: 11px;
+}
+
+#inf-prestamo, #inf-zumi {
+  width: 262px;
+  height: 400px;
+  margin: auto;
+  top: -19%;
+}
+#inf-prestamo .modal-dialog, #inf-zumi .modal-dialog {
+  margin-top: 95px;
+}
+#inf-prestamo .modal-body, #inf-zumi .modal-body {
+  margin-top: 35px;
+  color: #2e3032;
+  text-align: center;
+}
+#inf-prestamo .modal-body .bobles, #inf-zumi .modal-body .bobles {
+  position: absolute;
+  top: -128px;
+  left: 31px;
+}
+#inf-prestamo .modal-body .bobles .circle, #inf-zumi .modal-body .bobles .circle {
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.8) !important;
+}
+#inf-prestamo .modal-body .title, #inf-zumi .modal-body .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+#inf-prestamo .modal-body .payments, #inf-zumi .modal-body .payments {
+  font-size: 8px;
+  font-weight: bold;
+}
+#inf-prestamo .modal-body .description, #inf-zumi .modal-body .description {
+  font-size: 12px;
+}
+#inf-prestamo .modal-footer, #inf-zumi .modal-footer {
+  border-top: none;
+}
+#inf-prestamo .modal-footer .btn, #inf-zumi .modal-footer .btn {
+  background: #e1e2e7;
+  height: 40px;
+  width: 205px;
+  font-size: 16px;
+}
+
+#inf-zumi {
+  height: 417px;
+}
+#inf-zumi .modal-body {
+  text-align: left !important;
+  margin-top: 0px !important;
+}
+#inf-zumi .title {
+  font-size: 18px !important;
+}
+#inf-zumi .btn {
+  background: #17a54d !important;
+  color: white !important;
+}
+
+/*# sourceMappingURL=main.css.map */
